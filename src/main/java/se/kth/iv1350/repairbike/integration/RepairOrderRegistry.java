@@ -12,7 +12,7 @@ import se.kth.iv1350.repairbike.model.RepairOrder;
 public class RepairOrderRegistry {
     private List<RepairOrder> repairOrders = new ArrayList<>();
 
-    // Systemoperation 3: Instansierar en ny order och sparar den i listan
+    // Instansierar en ny order och sparar den i listan
     public RepairOrder createRepairOrder(Customer customer, Bike bike) {
         RepairOrder repairOrder = new RepairOrder(customer, bike);
         repairOrders.add(repairOrder);

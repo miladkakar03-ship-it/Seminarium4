@@ -14,7 +14,6 @@ public class FileLogger {
 
     public FileLogger() {
         try {
-            // "true" innebär att vi lägger till i slutet av filen istället för att skriva över
             logFile = new PrintWriter(new FileWriter(LOG_FILE_NAME, true));
         } catch (IOException e) {
             System.out.println("Kunde inte skapa loggfil.");

@@ -133,3 +133,28 @@ Order ID: 12345
 Ny status: Accepted
 Totalpris: 360.0 kr
 ------------------------------------------------
+2026-05-17T21:14:41.061324 - ORDERUPPDATERING
+Order ID: 12345
+Ny status: Newly Created
+Totalpris: 0.0 kr
+------------------------------------------------
+2026-05-17T21:14:41.065602 - ORDERUPPDATERING
+Order ID: 12345
+Ny status: Ready for approval
+Totalpris: 0.0 kr
+------------------------------------------------
+2026-05-17T21:14:41.067505 - ORDERUPPDATERING
+Order ID: 12345
+Ny status: Ready for approval
+Totalpris: 400.0 kr
+------------------------------------------------
+2026-05-17T21:14:41.067991 - ORDERUPPDATERING
+Order ID: 12345
+Ny status: Ready for approval
+Totalpris: 360.0 kr
+------------------------------------------------
+2026-05-17T21:14:41.068158 - ORDERUPPDATERING
+Order ID: 12345
+Ny status: Accepted
+Totalpris: 360.0 kr
+------------------------------------------------

@@ -7,7 +7,7 @@ import se.kth.iv1350.repairbike.view.View;
 
 public class Main {
     public static void main(String[] args) {
-        // Task 2b: Hämta den unika instansen via Singleton-mönstret
+        // Hämta den unika instansen via Singleton-mönstret
         CustomerRegistry customerRegistry = CustomerRegistry.getInstance();
         RepairOrderRegistry repairOrderRegistry = new RepairOrderRegistry();
         

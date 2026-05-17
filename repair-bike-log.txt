@@ -125,3 +125,11 @@ se.kth.iv1350.repairbike.integration.DatabaseFailureException: Databasen går in
 	at se.kth.iv1350.repairbike.view.View.run(View.java:38)
 	at se.kth.iv1350.repairbike.startup.Main.main(Main.java:17)
 
+2026-05-17T21:14:41.068628 - Exception fångat:
+se.kth.iv1350.repairbike.integration.DatabaseFailureException: Databasen går inte att nå.
+	at se.kth.iv1350.repairbike.integration.CustomerRegistry.findCustomer(CustomerRegistry.java:28)
+	at se.kth.iv1350.repairbike.controller.Controller.findCustomer(Controller.java:57)
+	at se.kth.iv1350.repairbike.view.View.executeScenario(View.java:43)
+	at se.kth.iv1350.repairbike.view.View.run(View.java:38)
+	at se.kth.iv1350.repairbike.startup.Main.main(Main.java:17)
+
