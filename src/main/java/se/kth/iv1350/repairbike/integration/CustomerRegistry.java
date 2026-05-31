@@ -23,6 +23,20 @@ public class CustomerRegistry {
         return INSTANCE;
     }
 
+    
+    
+    /**
+     * 
+     * 
+     * here is the change for seminarium 5
+     * 
+     * 
+     * Söker efter en kund i kundregistret med hjälp av ett telefonnummer.
+     * * @param phoneNumber Telefonnumret till kunden som ska sökas efter.
+     * @return Kundobjektet om det hittas i registret.
+     * @throws CustomerNotFoundException Om telefonnumret inte existerar i registret.
+     * @throws DatabaseFailureException Om det simulerade databasfelet (nummer 999) triggas.
+     */
     public Customer findCustomer(String phoneNumber) throws CustomerNotFoundException {
         if (phoneNumber.equals("999")) {
             throw new DatabaseFailureException("Databasen går inte att nå.");

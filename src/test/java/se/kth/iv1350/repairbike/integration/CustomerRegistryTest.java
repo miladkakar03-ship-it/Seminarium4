@@ -8,8 +8,7 @@ import se.kth.iv1350.repairbike.model.Customer;
 /**
  * Enhetstester för klassen CustomerRegistry. Verifierar att söklogiken
  * efter kunder fungerar som förväntat.
- * 
- */
+ * */
 public class CustomerRegistryTest {
     private CustomerRegistry instance;
     
@@ -46,6 +45,19 @@ public class CustomerRegistryTest {
         String phoneNumber = "99999999"; // Ett nummer som inte finns
         assertThrows(CustomerNotFoundException.class, () -> {
             instance.findCustomer(phoneNumber);
+        });
+    }
+
+    /**
+     * here is change for seminarium 5 test
+     * 
+     * Verifierar att det simulerade databasfelet kastar ett DatabaseFailureException.
+     */
+    @Test
+    public void testFindCustomerThrowsDatabaseFailure() {
+        String databaseErrorNumber = "999";
+        assertThrows(DatabaseFailureException.class, () -> {
+            instance.findCustomer(databaseErrorNumber);
         });
     }
 }
